@@ -72,7 +72,7 @@ module RailsAutolink
 
           AUTO_LINK_RE = %r{
               (?: ([0-9A-Za-z+.:-]+:)// | www\. )
-              [^\s<]+
+              [0-9A-Za-z+.:-]+
             }x
 
           # regexps for determining context, used high-volume
